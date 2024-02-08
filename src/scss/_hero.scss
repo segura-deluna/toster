@@ -1,14 +1,123 @@
-.hero{
-  &__container{
-    display:flex;
-    justify-content:center;
-    align-items:center;
+.hero {
+  background-color: $black;
+  padding: 32px 0;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100vw;
     height: 100vh;
   }
 
-  &__hello{
-    text-transform: uppercase;
-    margin: auto;
+  &__title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 125%;
+    text-align: center;
+    background: linear-gradient(135deg, rgb(135, 135, 135), rgb(254, 254, 254));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    margin-bottom: 16px;
+  }
+
+  &__subtitle {
+    background: linear-gradient(135deg, rgb(135, 135, 135), rgb(254, 254, 254));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+}
+
+.rating {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  width: 199px;
+  height: 72px;
+  background: $white;
+  margin: 0 auto 16px;
+  padding: 4px 10px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 180px;
+  }
+
+  &__stars {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 106px;
+    padding: 4px 0 0;
+  }
+
+  &__num {
+    font-weight: 400;
+    font-size: 16px;
+    color: $black;
+  }
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 0;
+    width: 149px;
+
+    &_text {
+      font-weight: 400;
+      font-size: 16px;
+      color: $black;
+    }
+  }
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: $white;
+  margin: 0 auto 50px;
+
+  &__today {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 43px;
+    line-height: 125%;
+  }
+
+  &__yesterday {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 27px;
+    text-align: center;
+    position: relative;
+
+    &::after {
+      display: block;
+      position: absolute;
+      content: '';
+      background-image: url(../img/stroke.png);
+      width: 60px;
+      height: 10px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
 }

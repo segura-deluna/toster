@@ -1,14 +1,17 @@
 // * base
-$font-family: 'OpenSans', sans-serif;
-$content-width: 1460px;
+$font-family: 'Poppins', sans-serif;
+$content-width: 370px;
 $container-offset: 15px;
 $container-width: calc($content-width + ($container-offset * 2));
 
 // = colors
 $white: #fff;
+$light:#F5F5F6;
 $black: #000;
-$gray:#2C2B2B;
-$light:#4c4c4c;
-$hold:#808080;
+$gray:#1F1F1F;
+
+$hold:#717271;
 $list-title:#FFD1A0;
-$accent: #FFA343;
+$siena:#EC6566;
+$accent: #FF4053;
+$heliotrope:#B15FFF;
