@@ -1,0 +1,19 @@
+.swiper {
+  &__title {
+  }
+}
+
+.mySwiper {
+  margin: 10px 0 12px;
+}
+
+.swiper-horizontal > .swiper-scrollbar,
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+  position: absolute;
+  left: var(--swiper-scrollbar-sides-offset, 1%);
+  bottom: var(--swiper-scrollbar-bottom, 4px);
+  top: var(--swiper-scrollbar-top, auto);
+  z-index: 50;
+  height: var(--swiper-scrollbar-size, 8px);
+  width: calc(100% - 2 * var(--swiper-scrollbar-sides-offset, 1%));
+}

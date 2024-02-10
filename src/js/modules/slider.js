@@ -1,11 +1,7 @@
-const slider = new Swiper('.slider', {
-  // Optional parameters
-  loop: true,
-
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+const swiper = new Swiper('.mySwiper', {
+  scrollbar: {
+    el: '.swiper-scrollbar',
+    hide: false,
+    draggable: true,
   },
 });

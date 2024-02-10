@@ -1,14 +1,10 @@
 <!doctype html>
-<html lang='en'>
-@include('./partials/_head.html')
+<html lang="en">
+  @include('./partials/_head.html')
 
-<body class='body'>
-
-@include('./partials/_header.html')
-@include('./partials/_hero.html')
-
-
-
-@include('./partials/_footer.html')
-</body>
+  <body class="body">
+    @include('./partials/_header.html') @include('./partials/_hero.html')
+    <div class="container">@include('./partials/_slider.html') @include('./partials/_description.html')</div>
+    @include('./partials/_footer.html')
+  </body>
 </html>
