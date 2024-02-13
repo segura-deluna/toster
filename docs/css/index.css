@@ -205,7 +205,7 @@ p {
 }
 .header__down_img {
   width: 258px;
-  height: 28px;
+  height: auto;
 }
 .header__burger {
   position: absolute;
@@ -400,6 +400,7 @@ p {
   font-size: 16px;
   line-height: 150%;
   color: #000;
+  margin-bottom: 12px;
 }
 .description__count_timer {
   font-weight: 600;
@@ -407,4 +408,70 @@ p {
   line-height: 150%;
   color: #b15fff;
   margin-left: 6px;
+}
+.description__price {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 0;
+  height: 64px;
+  color: #1f1f1f;
+  margin-bottom: 20px;
+}
+.description__price .price__today {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 125%;
+}
+.description__price .price__yesterday {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+.description__price .price__yesterday::after {
+  width: 35px;
+  height: 8px;
+}
+.description__price .price__yesterday::before {
+  position: absolute;
+  content: "-75%";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #ff4053;
+  right: -43px;
+}
+.description__offer {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 129%;
+  text-align: center;
+  color: #000;
+}
+.description__offer_text {
+  margin-bottom: 12px;
+}
+.description__btn {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 345px;
+  height: 52px;
+  background: #b0fde4;
+  margin-bottom: 8px;
+}
+.description__ship {
+  max-width: 200px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: #717271;
+  margin-bottom: 35px;
 }
