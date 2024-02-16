@@ -1,4 +1,5 @@
 .header {
+  position: relative;
   background-color: $black;
 
   &__up {
@@ -38,5 +39,56 @@
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
+  }
+}
+
+.menu {
+  display: none;
+  transition: 0.3s ease-in-out;
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: $white;
+
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 12px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 24px 0 24px;
+    background-color: $white;
+  }
+
+  &__link {
+    position: relative;
+    font-weight: 500;
+    color: $black;
+    margin-bottom: 24px;
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 24px;
+      height: 24px;
+      right: 0;
+      background-image: url(../img/arrow-right.svg);
+    }
+  }
+
+  &__line {
+    display: inline-block;
+    position: relative;
+    height: 1px;
+    width: 110%;
+    left: -15px;
+    background-color: $silver;
   }
 }

@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
   <meta charset="UTF-8">
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -14,8 +14,8 @@
   <script defer src="js/index.min.js"></script>
 </head>
 
-  <body class="body">
-    <header class='header'>
+<body class="body">
+  <header class='header'>
   <div class="header__up">
     <span class="header__up_text">Last chance + Free delivery 2-4 days in UK</span>
   </div>
@@ -25,7 +25,23 @@
       <img src="./img/menu.svg" alt="menu" class="header__burger">
     </div>
   </div>
-</header> <section class="hero">
+  <!-- Burger-menu -->
+  <div class="header__menu menu">
+    <div class="menu__head">
+      <img src="./img/logo-big-black.svg" alt="logo" class="menu__head_img">
+      <img src="./img/menu-close.svg" alt="close" class="menu__head_close">
+    </div>
+    <nav class="menu__list">
+      <a href="" class="menu__link">Go to product page</a>
+      <a href="" class="menu__link">Track your order</a>
+      <a href="" class="menu__link">Contact us</a>
+      <a href="" class="menu__link">FAQ</a>
+    </nav>
+    <span class="menu__line"></span>
+  </div>
+</header>
+
+  <section class="hero">
   <div class="container">
     <h1 class="hero__title">Power. It’s in the Air.</h1>
     <h3 class="hero__subtitle">Limited offer just for today</h3>
@@ -54,7 +70,8 @@
   </div>
 </section>
 
-    <div class="container"><!-- Swiper -->
+  <div class="container">
+    <!-- Swiper -->
 <section class="swiper mySwiper">
   <div class="swiper-wrapper">
     <div class="swiper-slide">
@@ -69,7 +86,8 @@
   </div>
   <div class="swiper-scrollbar"></div>
 </section>
- <section class="description">
+
+    <section class="description">
   <h2 class="description__title">Apple MacBook Air (M1, 2020) 16 ГБ, 1 ТБ SSD “Space Gray”</h2>
   <div class="description__scrollbar">
     <span class="description__scrollbar_text">35 items left</span>
@@ -97,11 +115,31 @@
   <button class="description__btn btn-reset">Buy now pay later</button>
   <p class="description__ship">In stock, ready for ship Delivery in 2-4 days in UK</p>
 </section>
-</div>
-    <footer class='footer'>
+
+    <section class="shipping">
+  <div class="shipping__head">
+    <h2 class="shipping__title">Free shipping in United Kingdom</h2>
+  </div>
+  <ul class="shipping__body">
+    <li class="shipping__body_images">
+      <img src="./img/dhl.png" alt="dhl" class="shipping__body_logo" />
+      <img src="./img/dpd.png" alt="dpd" class="shipping__body_logo" />
+      <img src="./img/fedex.png" alt="fedex" class="shipping__body_logo" />
+      <img src="./img/ups.png" alt="ups" class="shipping__body_logo" />
+    </li>
+    <li class="shipping__body_text">
+      All purchases are shipped from our warehouse in United Kingdom and are fully insured with a tracking number.
+      Tracked delivery between 2-4 days in United Kingdom + Free Delivery.
+    </li>
+  </ul>
+</section>
+
+  </div>
+  <footer class='footer'>
   <div class='container'>
   </div>
 </footer>
 
-  </body>
+</body>
+
 </html>
