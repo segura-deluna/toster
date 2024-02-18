@@ -219,7 +219,7 @@ p {
 .menu {
   display: none;
   transition: 0.3s ease-in-out;
-  position: absolute;
+  position: fixed;
   z-index: 5;
   width: 100%;
   height: 100vh;
@@ -299,6 +299,9 @@ p {
   text-align: center;
   margin-bottom: 16px;
 }
+.hero__img {
+  margin-bottom: 38px;
+}
 
 .rating {
   display: flex;
@@ -374,6 +377,63 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.trust {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4px;
+  max-width: 345px;
+  margin: 0 auto 32px;
+}
+.trust__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-radius: 4px;
+  background-color: #d5d5d5;
+  padding: 4px 8px;
+}
+.trust__item_up {
+  margin-bottom: 2px;
+}
+.trust__item_up img {
+  display: block;
+  width: 74px;
+  height: 14px;
+}
+.trust__item_down {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 8px;
+  color: #000;
+}
+.trust__item_down span {
+  font-weight: 700;
+}
+.trust__item_text {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 12px;
+  height: 14px;
+  color: #000;
+}
+.trust__item_text span:nth-child(1) {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 125%;
+}
+.trust__item_text span:nth-child(2) {
+  font-weight: 600;
+  line-height: 167%;
+}
+.trust__item_text:nth-child(2) span {
+  font-weight: 700;
 }
 
 .mySwiper {
