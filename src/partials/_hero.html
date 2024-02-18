@@ -18,11 +18,18 @@
         <img src="./img/arrow-down.svg" alt="arrow" class="rating__body_icon" />
       </div>
     </div>
+
     <div class="hero__price price">
       <span class="price__today">£199</span>
       <span class="price__yesterday">£1099</span>
     </div>
-    <img src="./img/macbook.png" alt="macbook" class="hero__img" />
+
+    <picture>
+      <source srcset="./img/macbook.avif">
+      <source srcset="./img/macbook.webp">
+      <img src="./img/macbook.png" alt="macbook" class="hero__img" />
+    </picture>
+
     <div class="hero__trust trust">
       <div class="trust__item">
         <img src="./img/union.svg" alt="union">
@@ -32,7 +39,7 @@
           <img src="./img/ratings.svg" alt="rating">
         </div>
         <div class="trust__item_down">
-          Over&nbsp;<span>10,000&nbsp;reviews</span>&nbsp;on
+          Over&nbsp;<span>10,000&nbsp;reviews</span>&nbsp;on&nbsp;
           <img src="./img/trustpilot.svg" alt="trustpilot">
         </div>
       </div>

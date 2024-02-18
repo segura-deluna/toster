@@ -426,7 +426,7 @@ p {
 .trust__item_text span:nth-child(1) {
   font-weight: 700;
   font-size: 16px;
-  line-height: 125%;
+  line-height: 100%;
 }
 .trust__item_text span:nth-child(2) {
   font-weight: 600;
@@ -583,6 +583,127 @@ p {
   margin-bottom: 35px;
 }
 
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.modal__logo {
+  width: 100px;
+  height: 18px;
+}
+.modal__close {
+  cursor: pointer;
+}
+.modal__content {
+  position: relative;
+  font-family: Montserrat;
+  border: 2px solid #b0fde4;
+  border-radius: 12px;
+  padding: 20px 16px 16px;
+  margin: 0 5px;
+  max-width: 400px;
+  background-color: #fff;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+.modal__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.modal__title {
+  font-weight: 700;
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 16px;
+}
+.modal__body {
+  border-radius: 10px;
+  max-width: 368px;
+  height: 103px;
+  padding: 10px;
+  margin-bottom: 16px;
+  background: #f5f5f6;
+}
+.modal__body_up {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.modal__body_price {
+  font-weight: 700;
+  font-size: 14px;
+  color: #000;
+}
+.modal__body_badge {
+  font-weight: 700;
+  font-size: 14px;
+  color: #000;
+  border-radius: 30px;
+  padding: 6px 14px;
+  width: 104px;
+  height: 29px;
+  background: #b0fde4;
+}
+.modal__items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal__item {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  font-size: 14px;
+  color: #545454;
+}
+.modal__item_title {
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.modal__item_text {
+  font-weight: 400;
+}
+.modal__line {
+  display: block;
+  border: 1px dashed #000;
+  max-width: 368px;
+  height: 0;
+  margin-bottom: 16px;
+}
+.modal__confirm {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 20px;
+  color: #000;
+  border-radius: 10px;
+  padding: 12px 14px;
+  width: 100%;
+  max-width: 368px;
+  height: 48px;
+  background: #b0fde4;
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
 .shipping {
   margin-bottom: 40px;
 }
