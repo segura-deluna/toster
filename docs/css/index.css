@@ -207,6 +207,7 @@ p {
 .header__down_img {
   width: 258px;
   height: auto;
+  margin-right: 10px;
 }
 .header__burger {
   position: absolute;
@@ -394,7 +395,7 @@ p {
   align-items: flex-start;
   border-radius: 4px;
   background-color: #d5d5d5;
-  padding: 4px 8px;
+  padding: 4px 6px;
 }
 .trust__item_up {
   margin-bottom: 2px;
